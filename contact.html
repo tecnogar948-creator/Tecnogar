@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TechHome Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #2563EB, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold gradient-text">TechHome Pro</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Inicio</a>
+                        <a href="index.html#services" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Servicios</a>
+                        <a href="index.html#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Nosotros</a>
+                        <a href="#" class="text-blue-600 px-3 py-2 text-sm font-medium">Contacto</a>
+                        <a href="services.html" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">Cotizar</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-900 hover:text-blue-600 p-2">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Inicio</a>
+                <a href="index.html#services" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Servicios</a>
+                <a href="index.html#about" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Nosotros</a>
+                <a href="#" class="block px-3 py-2 text-base font-medium text-blue-600">Contacto</a>
+                <a href="services.html" class="block px-3 py-2 text-base font-medium bg-blue-600 text-white rounded-md">Cotizar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-500 pt-16 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-6">Contáctanos</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                Estamos aquí para ayudarte a transformar tu hogar en un espacio inteligente y seguro
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Solicita tu Evaluación Gratuita</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">Nombre *</label>
+                                <input type="text" id="first-name" name="first-name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">Apellido *</label>
+                                <input type="text" id="last-name" name="last-name" required 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-gray-700 mb-2">Dirección</label>
+                            <input type="text" id="address" name="address" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   placeholder="Opcional - para evaluación presencial">
+                        </div>
+                        
+                        <div>
+                            <label for="service-type" class="block text-sm font-medium text-gray-700 mb-2">Tipo de Servicio *</label>
+                            <select id="service-type" name="service-type" required 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="internet">Conectividad y Redes</option>
+                                <option value="security">Seguridad Electrónica</option>
+                                <option value="access">Control de Acceso</option>
+                                <option value="electrical">Electricidad</option>
+                                <option value="automation">Domótica</option>
+                                <option value="emergency">Emergencia</option>
+                                <option value="multiple">Múltiples Servicios</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                      placeholder="Cuéntanos sobre tus necesidades específicas, presupuesto estimado o cualquier detalle adicional..."></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="preferred-contact" class="block text-sm font-medium text-gray-700 mb-2">Preferencia de Contacto</label>
+                            <select id="preferred-contact" name="preferred-contact" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="phone">Teléfono</option>
+                                <option value="email">Email</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="visit">Visita Presencial</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="preferred-time" class="block text-sm font-medium text-gray-700 mb-2">Horario Preferido</label>
+                            <select id="preferred-time" name="preferred-time" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="morning">Mañana (8:00 AM - 12:00 PM)</option>
+                                <option value="afternoon">Tarde (12:00 PM - 6:00 PM)</option>
+                                <option value="evening">Noche (6:00 PM - 8:00 PM)</option>
+                                <option value="weekend">Fin de Semana</option>
+                                <option value="anytime">Cualquier horario</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-lg">
+                            Solicitar Evaluación Gratuita
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-blue-50 rounded-lg p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-600 text-white p-3 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-phone text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 text-lg">Teléfono Principal</h4>
+                                    <p class="text-gray-600 text-lg">555-TECH-HELP</p>
+                                    <p class="text-gray-600">(555-832-4435)</p>
+                                    <p class="text-sm text-gray-500 mt-1">Lunes a Sábado: 8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-green-600 text-white p-3 rounded-full mr-4 mt-1">
+                                    <i class="fab fa-whatsapp text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 text-lg">WhatsApp</h4>
+                                    <p class="text-gray-600 text-lg">+1 555 123 4567</p>
+                                    <p class="text-sm text-gray-500 mt-1">Respuesta rápida durante el horario comercial</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-600 text-white p-3 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-envelope text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 text-lg">Email</h4>
+                                    <p class="text-gray-600 text-lg">info@techhomepro.com</p>
+                                    <p class="text-sm text-gray-500 mt-1">Respondemos en menos de 2 horas</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-600 text-white p-3 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 text-lg">Área de Servicio</h4>
+                                    <p class="text-gray-600">Ciudad de México y Área Metropolitana</p>
+                                    <p class="text-sm text-gray-500 mt-1">Servicio a domicilio sin costo adicional</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Contact -->
+                    <div class="bg-red-600 text-white rounded-lg p-8">
+                        <h3 class="text-2xl font-bold mb-4">Servicio de Emergencia</h3>
+                        <p class="mb-6 text-red-100">
+                            Para problemas críticos de seguridad, fallos eléctricos o problemas de conectividad, 
+                            estamos disponibles las 24 horas del día.
+                        </p>
+                        <a href="tel:+1234567890" class="inline-block bg-white text-red-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors text-lg">
+                            <i class="fas fa-phone mr-2"></i>
+                            Emergencia 24/7
+                        </a>
+                        <p class="text-sm text-red-100 mt-4">
+                            <i class="fas fa-clock mr-1"></i>
+                            Tiempo de respuesta: 30-60 minutos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Preguntas Frecuentes</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Resolvemos las dudas más comunes sobre nuestros servicios
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">¿Cuánto tiempo tardan en completar una instalación?</h3>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>El tiempo de instalación varía según el servicio. Instalaciones básicas de internet toman 2-3 horas, 
+                            mientras que sistemas de seguridad completos pueden tomar 4-6 horas. Siempre te damos un tiempo estimado 
+                            antes de comenzar el trabajo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">¿Ofrecen garantía en sus servicios?</h3>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>Sí, todos nuestros servicios incluyen garantía por escrito. Los equipos tienen garantía del fabricante 
+                            (generalmente 1-2 años) y nuestro trabajo de instalación tiene garantía de 2 años con soporte técnico incluido.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">¿Puedo financiar los servicios?</h3>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>Sí, ofrecemos opciones de financiamiento para proyectos mayores a $500. 
+                            Contamos con planes de 3, 6 y 12 meses sin intereses para proyectos específicos. 
+                            Consulta las condiciones con nuestro equipo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">¿Trabajan en fines de semana?</h3>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>Sí, atendemos los sábados de 8:00 AM a 6:00 PM. Los domingos solo para emergencias. 
+                            Sabemos que muchos clientes prefieren los fines de semana para no interrumpir su trabajo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <button class="faq-toggle w-full text-left flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">¿Necesito comprar los equipos por separado?</h3>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="faq-content hidden mt-4 text-gray-600">
+                            <p>No es necesario. Nosotros suministramos todos los equipos y materiales necesarios. 
+                            Trabajamos con las mejores marcas y te damos opciones según tu presupuesto y necesidades. 
+                            Todo está incluido en el precio final.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">TechHome Pro</h3>
+                    <p class="text-gray-400 mb-4">
+                        Transformamos hogares en espacios inteligentes, seguros y eficientes con las últimas tecnologías.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html" class="hover:text-white transition-colors">Conectividad y Redes</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Seguridad Electrónica</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Control de Acceso</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Electricidad</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Domótica</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Soporte</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Guías de Usuario</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Soporte Técnico</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Garantías</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Emergencias</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>555-TECH-HELP</li>
+                        <li>info@techhomepro.com</li>
+                        <li>Lun-Sáb: 8AM-8PM</li>
+                        <li>Emergencias: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 TechHome Pro. Todos los derechos reservados. | Política de Privacidad | Términos de Servicio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

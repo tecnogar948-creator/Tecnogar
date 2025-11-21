@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - TechHome Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563EB, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .calculator-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold gradient-text">TechHome Pro</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Inicio</a>
+                        <a href="index.html#services" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Servicios</a>
+                        <a href="index.html#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Nosotros</a>
+                        <a href="index.html#contact" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contacto</a>
+                        <a href="#calculator" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">Cotizar</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-900 hover:text-blue-600 p-2">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Inicio</a>
+                <a href="index.html#services" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Servicios</a>
+                <a href="index.html#about" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Nosotros</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Contacto</a>
+                <a href="#calculator" class="block px-3 py-2 text-base font-medium bg-blue-600 text-white rounded-md">Cotizar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-500 pt-16 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-white mb-6">Nuestros Servicios Especializados</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                Soluciones integrales en tecnología domiciliaria con profesionalismo y garantía
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <!-- Internet & Networks -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="resources/hero-internet.jpg" alt="Instalación de Internet" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="text-blue-600 mr-4">
+                                <i class="fas fa-wifi text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Conectividad y Redes</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Garantizamos la mejor conectividad para tu hogar con instalaciones profesionales y optimización de red. 
+                            Desde fibra óptica hasta redes mesh avanzadas.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Servicios Incluidos:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Instalación de fibra óptica</li>
+                                    <li>• Configuración de routers</li>
+                                    <li>• Optimización de señal</li>
+                                    <li>• Redes mesh WiFi 6</li>
+                                    <li>• Repetidores de señal</li>
+                                    <li>• Cableado estructurado</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-900 mb-2">Beneficios:</h4>
+                                <ul class="text-sm text-blue-700 space-y-1">
+                                    <li>• Velocidad máxima garantizada</li>
+                                    <li>• Cobertura total del hogar</li>
+                                    <li>• Seguridad avanzada</li>
+                                    <li>• Soporte técnico 24/7</li>
+                                    <li>• Garantía de 2 años</li>
+                                    <li>• Configuración parental</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-2xl font-bold text-blue-600">Desde $80</div>
+                            <button class="service-checkbox bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors" 
+                                    data-service="internet" data-price="80">
+                                Seleccionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Systems -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="resources/security-camera.jpg" alt="Sistema de Seguridad" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="text-blue-600 mr-4">
+                                <i class="fas fa-shield-alt text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Seguridad Electrónica</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Sistemas de videovigilancia de última generación con monitoreo remoto, grabación en la nube 
+                            y alertas inteligentes para máxima protección.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Servicios Incluidos:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Cámaras HD/4K</li>
+                                    <li>• Sistemas de alarmas</li>
+                                    <li>• Sensores de movimiento</li>
+                                    <li>• Videoporteros</li>
+                                    <li>• Grabación 24/7</li>
+                                    <li>• Monitoreo remoto</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-900 mb-2">Beneficios:</h4>
+                                <ul class="text-sm text-blue-700 space-y-1">
+                                    <li>• Vigilancia constante</li>
+                                    <li>• Alertas instantáneas</li>
+                                    <li>• Acceso desde móvil</li>
+                                    <li>• Almacenamiento en nube</li>
+                                    <li>• Detección de intrusos</li>
+                                    <li>• Integración con app</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-2xl font-bold text-blue-600">Desde $200</div>
+                            <button class="service-checkbox bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors" 
+                                    data-service="cameras" data-price="200">
+                                Seleccionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Access Control -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="resources/smart-lock.jpg" alt="Control de Acceso" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="text-blue-600 mr-4">
+                                <i class="fas fa-key text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Control de Acceso Inteligente</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Sistemas de control de acceso modernos con tecnología biométrica, códigos digitales 
+                            y control remoto desde tu smartphone.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Servicios Incluidos:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Cerraduras electrónicas</li>
+                                    <li>• Porteros con video</li>
+                                    <li>• Lector de huellas</li>
+                                    <li>• Tarjetas RFID</li>
+                                    <li>• Códigos numéricos</li>
+                                    <li>• Control por app</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-900 mb-2">Beneficios:</h4>
+                                <ul class="text-sm text-blue-700 space-y-1">
+                                    <li>• Acceso sin llaves</li>
+                                    <li>• Registro de entradas</li>
+                                    <li>• Apertura remota</li>
+                                    <li>• Múltiples usuarios</li>
+                                    <li>• Seguridad reforzada</li>
+                                    <li>• Fácil instalación</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-2xl font-bold text-blue-600">Desde $180</div>
+                            <button class="service-checkbox bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors" 
+                                    data-service="portero" data-price="180">
+                                Seleccionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electrical Services -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="resources/electrical-panel.jpg" alt="Servicios Eléctricos" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="text-blue-600 mr-4">
+                                <i class="fas fa-bolt text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Electricidad y Automatización</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Instalaciones eléctricas profesionales, automatización de iluminación y sistemas 
+                            de domótica para mayor eficiencia y confort.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-900 mb-2">Servicios Incluidos:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Instalaciones eléctricas</li>
+                                    <li>• Cuadros eléctricos</li>
+                                    <li>• Iluminación LED</li>
+                                    <li>• Enchufes inteligentes</li>
+                                    <li>• Termostatos</li>
+                                    <li>• Sensores de movimiento</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-900 mb-2">Beneficios:</h4>
+                                <ul class="text-sm text-blue-700 space-y-1">
+                                    <li>• Mayor eficiencia</li>
+                                    <li>• Ahorro energético</li>
+                                    <li>• Control remoto</li>
+                                    <li>• Seguridad mejorada</li>
+                                    <li>• Comodidad total</li>
+                                    <li>• Valor agregado</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-2xl font-bold text-blue-600">Desde $120</div>
+                            <button class="service-checkbox bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors" 
+                                    data-service="electricidad" data-price="120">
+                                Seleccionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Calculator -->
+    <section id="calculator" class="py-20 calculator-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Calculadora de Presupuesto</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Selecciona los servicios que necesitas y obtén un presupuesto estimado al instante
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Service Selection -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Selecciona tus Servicios</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="internet" data-price="150">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Instalación de Internet</h4>
+                                        <p class="text-sm text-gray-600">Fibra óptica y configuración completa</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$150</div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="red-wifi" data-price="80">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Configuración de Red WiFi</h4>
+                                        <p class="text-sm text-gray-600">Optimización y seguridad de red</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$80</div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="cameras" data-price="300">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Sistema de Cámaras de Seguridad</h4>
+                                        <p class="text-sm text-gray-600">4 cámaras HD con grabación 24/7</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$300</div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="alarmas" data-price="200">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Instalación de Alarmas</h4>
+                                        <p class="text-sm text-gray-600">Sistema completo con sensores</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$200</div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="portero" data-price="180">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Portero Inalámbrico</h4>
+                                        <p class="text-sm text-gray-600">Con video y comunicación bidireccional</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$180</div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="cerradura" data-price="250">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Cerradura Electrónica</h4>
+                                        <p class="text-sm text-gray-600">Control por código y app móvil</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$250</div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="electricidad" data-price="120">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Electricidad Domiciliaria</h4>
+                                        <p class="text-sm text-gray-600">Instalaciones y automatización</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$120</div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50">
+                                <div class="flex items-center">
+                                    <input type="checkbox" class="service-checkbox mr-4" data-service="domotica" data-price="400">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Sistema de Domótica</h4>
+                                        <p class="text-sm text-gray-600">Control integral del hogar</p>
+                                    </div>
+                                </div>
+                                <div class="text-xl font-bold text-blue-600">$400</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Budget Summary -->
+                <div>
+                    <div class="bg-white rounded-lg shadow-lg p-8 sticky top-24">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Resumen del Presupuesto</h3>
+                        
+                        <div class="border-b pb-4 mb-4">
+                            <div class="flex justify-between items-center text-lg font-semibold">
+                                <span>Total Estimado:</span>
+                                <span id="total-price" class="text-3xl text-blue-600">$0</span>
+                            </div>
+                        </div>
+                        
+                        <div id="selected-services" class="mb-6">
+                            <p class="text-gray-500">Selecciona los servicios que necesitas</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <button id="request-quote" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
+                                Solicitar Cotización Detallada
+                            </button>
+                            
+                            <button id="whatsapp-quote" class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                Consultar por WhatsApp
+                            </button>
+                        </div>
+                        
+                        <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-2">¡Promoción Especial!</h4>
+                            <p class="text-sm text-yellow-700">
+                                Contrata 3 o más servicios y obtén un 15% de descuento en el total.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Agenda tu Cita</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Selecciona la fecha y hora que mejor te convenga para tu evaluación gratuita
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Calendar -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Selecciona una Fecha</h3>
+                        <div id="appointment-calendar"></div>
+                    </div>
+                    
+                    <!-- Time Slots -->
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Horarios Disponibles</h3>
+                        <div id="time-slots">
+                            <p class="text-gray-500">Selecciona primero una fecha</p>
+                        </div>
+                        
+                        <button id="confirm-appointment" class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors mt-6" style="display: none;">
+                            Confirmar Cita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">TechHome Pro</h3>
+                    <p class="text-gray-400 mb-4">
+                        Transformamos hogares en espacios inteligentes, seguros y eficientes con las últimas tecnologías.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Conectividad y Redes</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Seguridad Electrónica</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Control de Acceso</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Electricidad</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Domótica</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Soporte</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Guías de Usuario</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Soporte Técnico</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Garantías</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Emergencias</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>555-TECH-HELP</li>
+                        <li>info@techhomepro.com</li>
+                        <li>Lun-Sáb: 8AM-8PM</li>
+                        <li>Emergencias: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 TechHome Pro. Todos los derechos reservados. | Política de Privacidad | Términos de Servicio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
