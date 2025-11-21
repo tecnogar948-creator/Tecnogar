@@ -1,646 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Ok Computer – Servicios Tecnológicos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    .hero-bg{background:linear-gradient(135deg,#2563EB 0%,#3B82F6 100%)}
-    .service-card{transition:all .3s ease}
-    .service-card:hover{transform:translateY(-5px);box-shadow:0 20px 25px -5px rgba(0,0,0,.1)}
-    .floating-icon{animation:float 3s ease-in-out infinite}
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-    .gradient-text{background:linear-gradient(135deg,#2563EB,#3B82F6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-  </style>
-</head>
-<body class="font-sans">
-
-<!-- NAVEGACIÓN -->
-<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16 items-center">
-      <h1 class="text-2xl font-bold gradient-text">Ok Computer</h1>
-      <div class="hidden md:flex space-x-6">
-        <a href="#home" class="text-gray-900 hover:text-blue-600">Inicio</a>
-        <a href="#services" class="text-gray-900 hover:text-blue-600">Servicios</a>
-        <a href="#about" class="text-gray-900 hover:text-blue-600">Nosotros</a>
-        <a href="#contact" class="text-gray-900 hover:text-blue-600">Contacto</a>
-        <a href="https://wa.me/5491112345678" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Cotizar</a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="home" class="hero-bg pt-16 min-h-screen flex items-center">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
-    <div>
-      <h2 class="text-5xl md:text-6xl font-bold mb-6">
-        Servicios de
-        <span class="block text-yellow-300">Tecnología</span>
-        <span class="block text-3xl md:text-4xl font-normal mt-2">a Domicilio</span>
-      </h2>
-      <p class="text-xl mb-8 text-blue-100 leading-relaxed">
-        Instalación y configuración de redes, seguridad, domótica y más. Garantía y soporte incluido.
-      </p>
-      <a href="#contact" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300">Solicitar Evaluación</a>
-    </div>
-    <div class="relative">
-      <img src="hero-internet.jpg" alt="Instalación de Internet" class="rounded-lg shadow-2xl w-full">
-      <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 p-3 rounded-full floating-icon"><i class="fas fa-wifi text-2xl"></i></div>
-      <div class="absolute -bottom-4 -left-4 bg-white text-blue-600 p-3 rounded-full floating-icon" style="animation-delay:1s"><i class="fas fa-shield-alt text-2xl"></i></div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICIOS -->
-<section id="services" class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-    <h2 class="text-4xl font-bold text-gray-900 mb-4">Servicios Especializados</h2>
-    <p class="text-xl text-gray-600">Soluciones integrales en tecnología domiciliaria con garantía.</p>
-  </div>
-
-  <div class="max-w-7xl mx-auto px
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechHome Pro - Servicios Tecnológicos Domiciliarios</title>
-    <script src="https://cdn.tailwindcss.com "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js "></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
-    <style>
-        .hero-bg {
-            background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
-        }
-        .service-card {
-            transition: all 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .floating-icon {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #2563EB, #3B82F6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-    </style>
-</head>
-<body class="font-sans">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold gradient-text">TechHome Pro</h1>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Inicio</a>
-                        <a href="#services" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Servicios</a>
-                        <a href="#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Nosotros</a>
-                        <a href="#contact" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contacto</a>
-                        <a href="services.html" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">Cotizar</a>
-                    </div>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-900 hover:text-blue-600 p-2">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Inicio</a>
-                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Servicios</a>
-                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Nosotros</a>
-                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Contacto</a>
-                <a href="services.html" class="block px-3 py-2 text-base font-medium bg-blue-600 text-white rounded-md">Cotizar</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg pt-16 min-h-screen flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white animate-on-scroll">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
-                        Tu Hogar
-                        <span class="block text-yellow-300">Inteligente</span>
-                        <span class="block text-3xl md:text-4xl font-normal mt-2">en Manos Expertas</span>
-                    </h1>
-                    <p class="text-xl mb-8 text-blue-100 leading-relaxed">
-                        Transformamos tu hogar con las últimas tecnologías en conectividad, seguridad y automatización. 
-                        Servicios profesionales con garantía y soporte técnico especializado.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-colors text-center">
-                            Solicitar Evaluación Gratuita
-                        </a>
-                        <a href="services.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center">
-                            Ver Servicios
-                        </a>
-                    </div>
-                </div>
-                <div class="animate-on-scroll">
-                    <div class="relative">
-                        <img src="resources/hero-internet.jpg" alt="Instalación de Internet" class="rounded-lg shadow-2xl w-full">
-                        <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 p-3 rounded-full floating-icon">
-                            <i class="fas fa-wifi text-2xl"></i>
-                        </div>
-                        <div class="absolute -bottom-4 -left-4 bg-white text-blue-600 p-3 rounded-full floating-icon" style="animation-delay: 1s;">
-                            <i class="fas fa-shield-alt text-2xl"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Servicios Especializados</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Ofrecemos soluciones integrales en tecnología domiciliaria con la más alta calidad y profesionalismo
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Internet & Networks -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 animate-on-scroll">
-                    <div class="text-blue-600 mb-6">
-                        <i class="fas fa-wifi text-4xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Conectividad y Redes</h3>
-                    <p class="text-gray-600 mb-6">
-                        Instalación profesional de internet, configuración de redes domésticas, optimización de señal WiFi y soluciones de conectividad integral para tu hogar.
-                    </p>
-                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Instalación de fibra óptica</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Configuración de routers</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Extensores de señal</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Redes mesh</li>
-                    </ul>
-                    <div class="text-2xl font-bold text-blue-600 mb-4">Desde $80</div>
-                    <a href="services.html" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                        Solicitar Servicio
-                    </a>
-                </div>
-
-                <!-- Security Systems -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 animate-on-scroll">
-                    <div class="text-blue-600 mb-6">
-                        <i class="fas fa-shield-alt text-4xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Seguridad Electrónica</h3>
-                    <p class="text-gray-600 mb-6">
-                        Sistemas de cámaras de seguridad de alta definición, alarmas inteligentes con monitoreo remoto, sensores de movimiento y sistemas de videovigilancia 24/7.
-                    </p>
-                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cámaras HD y 4K</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Alarmas conectadas</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Monitoreo remoto</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Grabación en nube</li>
-                    </ul>
-                    <div class="text-2xl font-bold text-blue-600 mb-4">Desde $200</div>
-                    <a href="services.html" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                        Solicitar Servicio
-                    </a>
-                </div>
-
-                <!-- Smart Access Control -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 animate-on-scroll">
-                    <div class="text-blue-600 mb-6">
-                        <i class="fas fa-key text-4xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Control de Acceso</h3>
-                    <p class="text-gray-600 mb-6">
-                        Porteros inalámbricos con video, cerraduras electrónicas con código y biométricas, sistemas de intercomunicación avanzados.
-                    </p>
-                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Porteros con video</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cerraduras inteligentes</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Control por app</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Acceso remoto</li>
-                    </ul>
-                    <div class="text-2xl font-bold text-blue-600 mb-4">Desde $180</div>
-                    <a href="services.html" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                        Solicitar Servicio
-                    </a>
-                </div>
-
-                <!-- Electrical Services -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 animate-on-scroll">
-                    <div class="text-blue-600 mb-6">
-                        <i class="fas fa-bolt text-4xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Electricidad Domiciliaria</h3>
-                    <p class="text-gray-600 mb-6">
-                        Instalaciones eléctricas domiciliarias, automatización de iluminación, sistemas de domótica y soluciones inteligentes para hacer tu hogar más eficiente.
-                    </p>
-                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Instalaciones eléctricas</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Iluminación inteligente</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Automatización</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Ahorro energético</li>
-                    </ul>
-                    <div class="text-2xl font-bold text-blue-600 mb-4">Desde $120</div>
-                    <a href="services.html" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                        Solicitar Servicio
-                    </a>
-                </div>
-
-                <!-- Home Automation -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 animate-on-scroll">
-                    <div class="text-blue-600 mb-6">
-                        <i class="fas fa-home text-4xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Domótica Integral</h3>
-                    <p class="text-gray-600 mb-6">
-                        Sistemas de automatización completa para tu hogar, control de iluminación, climatización, seguridad y entretenimiento desde un solo dispositivo.
-                    </p>
-                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Control centralizado</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>App móvil</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Asistentes de voz</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Escenas personalizadas</li>
-                    </ul>
-                    <div class="text-2xl font-bold text-blue-600 mb-4">Desde $400</div>
-                    <a href="services.html" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                        Solicitar Servicio
-                    </a>
-                </div>
-
-                <!-- Emergency Services -->
-                <div class="service-card bg-white rounded-lg shadow-lg p-8 animate-on-scroll">
-                    <div class="text-red-600 mb-6">
-                        <i class="fas fa-exclamation-triangle text-4xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Servicio de Emergencia</h3>
-                    <p class="text-gray-600 mb-6">
-                        Atención inmediata para problemas críticos de seguridad, fallos eléctricos o problemas de conectividad. Disponibles 24/7 para emergencias.
-                    </p>
-                    <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Atención 24/7</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Respuesta rápida</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Técnicos certificados</li>
-                        <li><i class="fas fa-check text-green-500 mr-2"></i>Garantía extendida</li>
-                    </ul>
-                    <div class="text-2xl font-bold text-red-600 mb-4">Llama Ahora</div>
-                    <a href="tel:+1234567890" class="block w-full bg-red-600 text-white text-center py-3 rounded-lg hover:bg-red-700 transition-colors">
-                        555-TECH-HELP
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="animate-on-scroll">
-                    <img src="resources/team.jpg" alt="Nuestro Equipo" class="rounded-lg shadow-xl w-full">
-                </div>
-                <div class="animate-on-scroll">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-6">¿Por qué elegir TechHome Pro?</h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        Somos un equipo de profesionales certificados con más de 10 años de experiencia en soluciones tecnológicas domiciliarias. Nos especializamos en transformar hogares en espacios inteligentes, seguros y eficientes.
-                    </p>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-center">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-certificate text-green-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Técnicos Certificados</h4>
-                                <p class="text-gray-600">Personal capacitado y certificado por las principales marcas</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-shield-alt text-blue-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Garantía Total</h4>
-                                <p class="text-gray-600">Todos nuestros servicios incluyen garantía por escrito</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center">
-                            <div class="bg-yellow-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-clock text-yellow-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Respuesta Rápida</h4>
-                                <p class="text-gray-600">Atendemos tus necesidades en menos de 24 horas</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center">
-                            <div class="bg-purple-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-tools text-purple-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Soporte Continuo</h4>
-                                <p class="text-gray-600">Asistencia técnica post-instalación incluida</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-gray-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Más de 500 hogares transformados</h3>
-                        <p class="text-gray-600">Nuestros clientes confían en nosotros para hacer de sus hogares espacios más seguros, eficientes y tecnológicamente avanzados.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Listo para transformar tu hogar?</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Contáctanos hoy mismo para una evaluación gratuita y descubre cómo podemos hacer de tu hogar un espacio más inteligente y seguro.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Contact Form -->
-                <div class="bg-white rounded-lg shadow-lg p-8 animate-on-scroll">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Solicita tu Evaluación Gratuita</h3>
-                    <form id="contact-form" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
-                                <input type="text" id="first-name" name="first-name" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                            </div>
-                            <div>
-                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">Apellido</label>
-                                <input type="text" id="last-name" name="last-name" required 
-                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                            <input type="email" id="email" name="email" required 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
-                            <input type="tel" id="phone" name="phone" required 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        </div>
-                        
-                        <div>
-                            <label for="service-type" class="block text-sm font-medium text-gray-700 mb-2">Tipo de Servicio</label>
-                            <select id="service-type" name="service-type" required 
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                                <option value="">Selecciona un servicio</option>
-                                <option value="internet">Conectividad y Redes</option>
-                                <option value="security">Seguridad Electrónica</option>
-                                <option value="access">Control de Acceso</option>
-                                <option value="electrical">Electricidad</option>
-                                <option value="automation">Domótica</option>
-                                <option value="emergency">Emergencia</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" 
-                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                      placeholder="Cuéntanos sobre tus necesidades específicas..."></textarea>
-                        </div>
-                        
-                        <button type="submit" 
-                                class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                            Enviar Solicitud
-                        </button>
-                    </form>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="animate-on-scroll">
-                    <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h3>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-phone text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">Teléfono</h4>
-                                    <p class="text-gray-600">555-TECH-HELP (555-832-4435)</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-center">
-                                <div class="bg-green-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-whatsapp text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">WhatsApp</h4>
-                                    <p class="text-gray-600">+1 555 123 4567</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-center">
-                                <div class="bg-red-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-red-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">Email</h4>
-                                    <p class="text-gray-600">info@techhomepro.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-center">
-                                <div class="bg-purple-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-clock text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-900">Horario</h4>
-                                    <p class="text-gray-600">Lunes a Sábado: 8:00 AM - 8:00 PM</p>
-                                    <p class="text-gray-600">Emergencias: 24/7</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Emergency Contact -->
-                    <div class="bg-red-600 text-white rounded-lg p-8">
-                        <h3 class="text-2xl font-bold mb-4">¿Es una Emergencia?</h3>
-                        <p class="mb-6">Para problemas críticos de seguridad o fallos eléctricos, estamos disponibles las 24 horas.</p>
-                        <a href="tel:+1234567890" class="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-                            <i class="fas fa-phone mr-2"></i>
-                            Llamada de Emergencia
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold gradient-text mb-4">TechHome Pro</h3>
-                    <p class="text-gray-400 mb-4">
-                        Transformamos hogares en espacios inteligentes, seguros y eficientes con las últimas tecnologías.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="services.html" class="hover:text-white transition-colors">Conectividad y Redes</a></li>
-                        <li><a href="services.html" class="hover:text-white transition-colors">Seguridad Electrónica</a></li>
-                        <li><a href="services.html" class="hover:text-white transition-colors">Control de Acceso</a></li>
-                        <li><a href="services.html" class="hover:text-white transition-colors">Electricidad</a></li>
-                        <li><a href="services.html" class="hover:text-white transition-colors">Domótica</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Soporte</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Guías de Usuario</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Soporte Técnico</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Garantías</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Emergencias</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>555-TECH-HELP</li>
-                        <li>info@techhomepro.com</li>
-                        <li>Lun-Sáb: 8AM-8PM</li>
-                        <li>Emergencias: 24/7</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 TechHome Pro. Todos los derechos reservados. | Política de Privacidad | Términos de Servicio</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="main.js"></script>
-</body>
-</html>
-Edit
-Copy
-Share
-A continuación te muestro el mismo código, pero cambiando las rutas de imágenes para que apunten a la raíz del repo (donde están tus fotos) y no a la carpeta resources/.
-Copiá-pega esto completo en tu index.html (sustituyendo el anterior) y las fotos aparecerán en cuanto subas el archivo y refresques la web.
-HTML
-Preview
-Copy
-<!DOCTYPE html>
-<html lang="es">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechHome Pro - Servicios Tecnológicos Domiciliarios</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .hero-bg {
-            background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
-        }
-        .service-card {
-            transition: all 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .floating-icon {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #2563EB, #3B82F6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+        .hero-bg { background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%); }
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .floating-icon { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .gradient-text { background: linear-gradient(135deg, #2563EB, #3B82F6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     </style>
 </head>
 <body class="font-sans">
 
-<!-- NAVIGATION (igual) -->
+<!-- NAV -->
 <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16 items-center">
-            <h1 class="text-2xl font-bold gradient-text">TechHome Pro</h1>
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="text-gray-900 hover:text-blue-600">Inicio</a>
-                <a href="#services" class="text-gray-900 hover:text-blue-600">Servicios</a>
-                <a href="#about" class="text-gray-900 hover:text-blue-600">Nosotros</a>
-                <a href="#contact" class="text-gray-900 hover:text-blue-600">Contacto</a>
-                <a href="services.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Cotizar</a>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 flex justify-between h-16 items-center">
+        <h1 class="text-2xl font-bold gradient-text">TechHome Pro</h1>
+        <div class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-900 hover:text-blue-600">Inicio</a>
+            <a href="#services" class="text-gray-900 hover:text-blue-600">Servicios</a>
+            <a href="#about" class="text-gray-900 hover:text-blue-600">Nosotros</a>
+            <a href="#contact" class="text-gray-900 hover:text-blue-600">Contacto</a>
+            <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Cotizar</a>
         </div>
     </div>
 </nav>
 
 <!-- HERO -->
 <section id="home" class="hero-bg pt-16 min-h-screen flex items-center">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="text-white">
             <h1 class="text-5xl md:text-6xl font-bold mb-6">
                 Tu Hogar
@@ -657,7 +50,7 @@ Copy
             </div>
         </div>
         <div class="relative">
-            <!-- IMAGEN PRINCIPAL: ruta corregida -->
+            <!-- IMAGEN HERO -->
             <img src="hero-internet.jpg" alt="Instalación de Internet" class="rounded-lg shadow-2xl w-full">
             <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 p-3 rounded-full floating-icon"><i class="fas fa-wifi text-2xl"></i></div>
             <div class="absolute -bottom-4 -left-4 bg-white text-blue-600 p-3 rounded-full floating-icon" style="animation-delay: 1s;"><i class="fas fa-shield-alt text-2xl"></i></div>
@@ -665,39 +58,74 @@ Copy
     </div>
 </section>
 
-<!-- SERVICIOS (solo se cambian las rutas de las imágenes) -->
+<!-- SERVICIOS -->
 <section id="services" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+    <div class="max-w-7xl mx-auto px-4 text-center mb-16">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">Servicios Especializados</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ofrecemos soluciones integrales en tecnología domiciliaria con la más alta calidad y profesionalismo</p>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Servicio 1 -->
+        <!-- Conectividad -->
         <div class="service-card bg-white rounded-lg shadow-lg p-8">
             <div class="text-blue-600 mb-6"><i class="fas fa-wifi text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Conectividad y Redes</h3>
-            <p class="text-gray-600 mb-6">Instalación profesional de internet, configuración de redes domésticas, optimización de señal WiFi y soluciones de conectividad integral para tu hogar.</p>
+            <p class="text-gray-600 mb-6">Instalación profesional de internet, configuración de redes domésticas, optimización de señal WiFi y soluciones de conectividad integral.</p>
             <div class="text-2xl font-bold text-blue-600 mb-4">Desde $80</div>
             <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700">Solicitar Servicio</a>
         </div>
 
-        <!-- Servicio 2 -->
+        <!-- Seguridad -->
         <div class="service-card bg-white rounded-lg shadow-lg p-8">
             <div class="text-blue-600 mb-6"><i class="fas fa-shield-alt text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Seguridad Electrónica</h3>
-            <p class="text-gray-600 mb-6">Sistemas de cámaras de seguridad de alta definición, alarmas inteligentes con monitoreo remoto, sensores de movimiento y sistemas de videovigilancia 24/7.</p>
+            <p class="text-gray-600 mb-6">Cámaras HD/4K, alarmas con monitoreo remoto, sensores de movimiento y grabación en nube 24/7.</p>
             <div class="text-2xl font-bold text-blue-600 mb-4">Desde $200</div>
-            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700">Solicitar Servicio</a>
+            <!-- IMAGEN SERVICIO -->
+            <img src="security-camera.jpg" alt="Cámaras de seguridad" class="rounded-lg mt-4 w-full">
+            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
         </div>
 
-        <!-- Servicio 3 -->
+        <!-- Control de acceso -->
         <div class="service-card bg-white rounded-lg shadow-lg p-8">
             <div class="text-blue-600 mb-6"><i class="fas fa-key text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Control de Acceso</h3>
             <p class="text-gray-600 mb-6">Porteros inalámbricos con video, cerraduras electrónicas con código y biométricas, sistemas de intercomunicación avanzados.</p>
             <div class="text-2xl font-bold text-blue-600 mb-4">Desde $180</div>
-            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700">Solicitar Servicio</a>
+            <!-- IMAGEN SERVICIO -->
+            <img src="smart-lock.jpg" alt="Cerradura inteligente" class="rounded-lg mt-4 w-full">
+            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
+        </div>
+
+        <!-- Electricidad -->
+        <div class="service-card bg-white rounded-lg shadow-lg p-8">
+            <div class="text-blue-600 mb-6"><i class="fas fa-bolt text-4xl"></i></div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Electricidad Domiciliaria</h3>
+            <p class="text-gray-600 mb-6">Instalaciones eléctricas domiciliarias, automatización de iluminación, sistemas de domótica y soluciones inteligentes.</p>
+            <div class="text-2xl font-bold text-blue-600 mb-4">Desde $120</div>
+            <!-- IMAGEN SERVICIO -->
+            <img src="electrical-panel.jpg" alt="Panel eléctrico" class="rounded-lg mt-4 w-full">
+            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
+        </div>
+
+        <!-- Domótica -->
+        <div class="service-card bg-white rounded-lg shadow-lg p-8">
+            <div class="text-blue-600 mb-6"><i class="fas fa-home text-4xl"></i></div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Domótica Integral</h3>
+            <p class="text-gray-600 mb-6">Control centralizado de iluminación, climatización, seguridad y entretenimiento desde un solo dispositivo o app móvil.</p>
+            <div class="text-2xl font-bold text-blue-600 mb-4">Desde $400</div>
+            <!-- IMAGEN SERVICIO -->
+            <img src="smart-home.jpg" alt="Hogar inteligente" class="rounded-lg mt-4 w-full">
+            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
+        </div>
+
+        <!-- Emergencia -->
+        <div class="service-card bg-white rounded-lg shadow-lg p-8">
+            <div class="text-red-600 mb-6"><i class="fas fa-exclamation-triangle text-4xl"></i></div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Servicio de Emergencia</h3>
+            <p class="text-gray-600 mb-6">Atención inmediata 24/7 para problemas críticos de seguridad, fallos eléctricos o conectividad.</p>
+            <div class="text-2xl font-bold text-red-600 mb-4">Llama Ahora</div>
+            <a href="tel:+1234567890" class="block w-full bg-red-600 text-white text-center py-3 rounded-lg hover:bg-red-700">555-TECH-HELP</a>
         </div>
     </div>
 </section>
