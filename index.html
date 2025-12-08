@@ -8,27 +8,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root{--negro:#000;--gris-oscuro:#111;--neon:#00ffcc}
-        body{background:var(--gris-oscuro);color:#e0e0e0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-        .hero-bg{background:linear-gradient(135deg,var(--negro) 0%,#1a1a1a 100%)}
-        .service-card{background:#1a1a1a;border:1px solid #333;transition:.3s}
-        .service-card:hover{transform:translateY(-4px);box-shadow:0 0 20px var(--neon)}
+        :root{--aguamarina:#006b6b;--oro:#d4af37;--negro:#111;--gris-oscuro:#1f1f1f}
+        body{background:var(--negro);color:#e0e0e0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+        .hero-bg{background:linear-gradient(135deg,var(--negro) 0%,var(--gris-oscuro) 100%)}
+        .service-card{background:var(--gris-oscuro);border:1px solid #333;transition:.3s}
+        .service-card:hover{transform:translateY(-4px);box-shadow:0 0 20px var(--oro)}
         .floating-icon{animation:float 3s ease-in-out infinite}
         @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-        .btn-neon{background:var(--neon);color:var(--negro);font-weight:bold;padding:12px 24px;border-radius:6px;display:inline-block;transition:.3s}
-        .btn-neon:hover{box-shadow:0 0 15px var(--neon)}
-        .gradient-text{background:linear-gradient(90deg,var(--neon),#39ff14);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-        nav{background:#0d0d0d;border-bottom:1px solid #222}
-        footer{background:#0d0d0d}
+        .btn-oro{background:var(--oro);color:var(--negro);font-weight:bold;padding:12px 24px;border-radius:6px;display:inline-block;transition:.3s}
+        .btn-oro:hover{box-shadow:0 0 15px var(--oro)}
+        .gradient-text{background:linear-gradient(90deg,var(--oro),#f1d592);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        nav{background:#0a0a0a;border-bottom:1px solid #444}
+        footer{background:#0a0a0a}
     </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav class="sticky top-0 z-50">
+<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 flex justify-between h-16 items-center">
         <h1 class="text-2xl font-bold gradient-text">TecnogarBA</h1>
-        <div class="hidden md:flex space-x-6 text-sm">
+        <div class="hidden md:flex space-x-6">
             <a href="#home" class="text-gray-300 hover:text-white">Inicio</a>
             <a href="#services" class="text-gray-300 hover:text-white">Servicios</a>
             <a href="#about" class="text-gray-300 hover:text-white">Nosotros</a>
@@ -50,13 +50,13 @@
                 Servicios con garantía y soporte técnico especializado.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" class="btn-neon">Solicitar Servicio</a>
-                <a href="#services" class="border border-neon text-neon px-6 py-3 rounded-lg font-semibold hover:bg-neon hover:text-black transition">Ver Servicios</a>
+                <a href="https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" class="btn-oro">Solicitar Servicio</a>
+                <a href="#services" class="border border-oro text-oro px-6 py-3 rounded-lg font-semibold hover:bg-oro hover:text-black transition">Ver Servicios</a>
             </div>
         </div>
         <div class="relative">
             <img src="casainteligente.jpg" alt="Casa Inteligente" class="rounded-lg shadow-2xl w-full">
-            <div class="absolute -top-4 -right-4 bg-neon text-black p-3 rounded-full floating-icon"><i class="fas fa-wifi text-xl"></i></div>
+            <div class="absolute -top-4 -right-4 bg-oro text-black p-3 rounded-full floating-icon"><i class="fas fa-wifi text-xl"></i></div>
             <div class="absolute -bottom-4 -left-4 bg-white text-black p-3 rounded-full floating-icon" style="animation-delay: 1s;"><i class="fas fa-shield-alt text-xl"></i></div>
         </div>
     </div>
@@ -71,52 +71,51 @@
 
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="service-card rounded-lg p-8">
-            <div class="text-neon mb-6"><i class="fas fa-wifi text-4xl"></i></div>
+            <div class="text-oro mb-6"><i class="fas fa-wifi text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-white mb-4">Conectividad y Redes</h3>
             <p class="text-gray-400 mb-6">Instalación profesional de internet, configuración de redes domésticas, optimización de señal WiFi y soluciones de conectividad integral.</p>
-            <img src="casainteligente.jpg" alt="Conectividad" class="rounded-lg mt-4 w-full">
-            <a href="https://wa.me/541158279207?text=Quiero%20Conectividad%20y%20Redes" class="btn-neon mt-4">Solicitar Servicio</a>
+            <img src="casainteligente.jpg" alt="Casa Inteligente" class="rounded-lg mt-4 w-full">
+            <a href="https://wa.me/541158279207?text=Quiero%20Conectividad%20y%20Redes" class="btn-oro mt-4">Solicitar Servicio</a>
         </div>
 
         <div class="service-card rounded-lg p-8">
-            <div class="text-neon mb-6"><i class="fas fa-shield-alt text-4xl"></i></div>
+            <div class="text-oro mb-6"><i class="fas fa-shield-alt text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-white mb-4">Seguridad Electrónica</h3>
             <p class="text-gray-400 mb-6">Cámaras HD/4K, alarmas con monitoreo remoto, sensores de movimiento y grabación en nube 24/7.</p>
             <img src="security-camera.jpg" alt="Cámaras de seguridad" class="rounded-lg mt-4 w-full">
-            <a href="https://wa.me/541158279207?text=Quiero%20Seguridad%20Electrónica" class="btn-neon mt-4">Solicitar Servicio</a>
+            <a href="https://wa.me/541158279207?text=Quiero%20Seguridad%20Electrónica" class="btn-oro mt-4">Solicitar Servicio</a>
         </div>
 
         <div class="service-card rounded-lg p-8">
-            <div class="text-neon mb-6"><i class="fas fa-key text-4xl"></i></div>
+            <div class="text-oro mb-6"><i class="fas fa-key text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-white mb-4">Control de Acceso</h3>
             <p class="text-gray-400 mb-6">Porteros inalámbricos con video, cerraduras electrónicas con código y biométricas, sistemas de intercomunicación avanzados.</p>
             <img src="smart-lock.jpg" alt="Cerradura inteligente" class="rounded-lg mt-4 w-full">
-            <a href="https://wa.me/541158279207?text=Quiero%20Control%20de%20Acceso" class="btn-neon mt-4">Solicitar Servicio</a>
+            <a href="https://wa.me/541158279207?text=Quiero%20Control%20de%20Acceso" class="btn-oro mt-4">Solicitar Servicio</a>
         </div>
 
         <div class="service-card rounded-lg p-8">
-            <div class="text-neon mb-6"><i class="fas fa-bolt text-4xl"></i></div>
+            <div class="text-oro mb-6"><i class="fas fa-bolt text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-white mb-4">Electricidad Domiciliaria</h3>
             <p class="text-gray-400 mb-6">Instalaciones eléctricas domiciliarias, automatización de iluminación, sistemas de domótica y soluciones inteligentes.</p>
-            <!-- IMAGEN NUEVA: tablero-electrico-libre.jpg -->
-            <img src="resources/tablero-electrico-libre.jpg" alt="Tablero eléctrico domiciliario" class="rounded-lg mt-4 w-full">
-            <a href="https://wa.me/541158279207?text=Quiero%20Electricidad%20Domiciliaria" class="btn-neon mt-4">Solicitar Servicio</a>
+            <img src="tablero-electrico.jpg" alt="Tablero eléctrico domiciliario" class="rounded-lg mt-4 w-full">
+            <a href="https://wa.me/541158279207?text=Quiero%20Electricidad%20Domiciliaria" class="btn-oro mt-4">Solicitar Servicio</a>
         </div>
 
         <div class="service-card rounded-lg p-8">
-            <div class="text-neon mb-6"><i class="fas fa-home text-4xl"></i></div>
+            <div class="text-oro mb-6"><i class="fas fa-home text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-white mb-4">Domótica Integral</h3>
             <p class="text-gray-400 mb-6">Control centralizado de iluminación, climatización, seguridad y entretenimiento desde un solo dispositivo o app móvil.</p>
             <img src="smart-home.jpg" alt="Hogar inteligente" class="rounded-lg mt-4 w-full">
-            <a href="https://wa.me/541158279207?text=Quiero%20Domótica%20Integral" class="btn-neon mt-4">Solicitar Servicio</a>
+            <a href="https://wa.me/541158279207?text=Quiero%20Domótica%20Integral" class="btn-oro mt-4">Solicitar Servicio</a>
         </div>
 
         <!-- Llamado a la acción -->
         <div class="service-card rounded-lg p-8 text-center">
-            <i class="fas fa-tools text-5xl mb-4 text-neon"></i>
+            <i class="fas fa-tools text-5xl mb-4 text-oro"></i>
             <h3 class="text-2xl font-bold text-white mb-4">¿Necesitás otro servicio?</h3>
             <p class="mb-6 text-gray-400">Hacemos instalaciones a medida.</p>
-            <a href="https://wa.me/541158279207?text=Quiero%20una%20instalación%20a%20medida" class="btn-neon">Consultar Ahora</a>
+            <a href="https://wa.me/541158279207?text=Quiero%20una%20instalación%20a%20medida" class="btn-oro">Consultar Ahora</a>
         </div>
     </div>
 </section>
@@ -133,8 +132,8 @@
                 Somos un equipo de profesionales certificados con más de 10 años de experiencia en soluciones tecnológicas domiciliarias.
                 Nos especializamos en transformar hogares en espacios inteligentes, seguros y eficientes.
             </p>
-            <div class="bg-gray-900 border border-neon rounded-lg p-6">
-                <h3 class="text-xl font-bold text-neon mb-2">Expertos en cada instalación</h3>
+            <div class="bg-gray-900 border border-oro rounded-lg p-6">
+                <h3 class="text-xl font-bold text-oro mb-2">Expertos en cada instalación</h3>
                 <p class="text-gray-300">Trabajo certificado, garantía escrita y soporte post-instalación incluido.</p>
             </div>
         </div>
@@ -148,27 +147,27 @@
         <p class="text-xl text-gray-400 max-w-3xl mx-auto">Contactanos y coordinamos tu instalación en el día.</p>
     </div>
     <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div class="bg-gray-900 border border-neon rounded-lg p-8">
-            <h3 class="text-2xl font-bold text-neon mb-6">Dejanos tus datos</h3>
+        <div class="bg-gray-900 border border-oro rounded-lg p-8">
+            <h3 class="text-2xl font-bold text-oro mb-6">Dejanos tus datos</h3>
             <form>
                 <input type="text" placeholder="Nombre" required class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white">
                 <input type="email" placeholder="Email" required class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white">
                 <input type="tel" placeholder="Teléfono" required class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white">
                 <textarea placeholder="Mensaje" rows="4" class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white"></textarea>
-                <button type="submit" formaction="https://wa.me/541158279207" formtarget="_blank" class="w-full btn-neon">Enviar por WhatsApp</button>
+                <button type="submit" formaction="https://wa.me/541158279207" formtarget="_blank" class="btn-oron">Enviar por WhatsApp</button>
             </form>
         </div>
         <div class="space-y-6">
-            <div class="bg-gray-900 border border-neon rounded-lg p-6">
-                <h4 class="font-semibold text-neon mb-2">WhatsApp</h4>
+            <div class="bg-gray-900 border border-oro rounded-lg p-6">
+                <h4 class="font-semibold text-oro mb-2">WhatsApp</h4>
                 <p class="text-gray-300">+54 11 5827 9207</p>
-                <h4 class="font-semibold text-neon mb-2 mt-4">Email</h4>
+                <h4 class="font-semibold text-oro mb-2 mt-4">Email</h4>
                 <p class="text-gray-300">tecnogar948@gmail.com</p>
             </div>
-            <div class="bg-neon text-black rounded-lg p-6 text-center">
+            <div class="bg-oro text-black rounded-lg p-6 text-center">
                 <h3 class="text-xl font-bold mb-2">¿Tenés dudas?</h3>
                 <p class="mb-4">Escribinos y respondemos en menos de 24 h.</p>
-                <a href="https://wa.me/541158279207?text=Hola,%20tengo%20una%20consulta" class="inline-block bg-black text-neon px-6 py-2 rounded-lg font-bold hover:bg-white hover:text-black transition">Consultar por WhatsApp</a>
+                <a href="https://wa.me/541158279207?text=Hola,%20tengo%20una%20consulta" class="inline-block bg-black text-oro px-6 py-2 rounded-lg font-bold hover:bg-white hover:text-black transition">Consultar por WhatsApp</a>
             </div>
         </div>
     </div>
