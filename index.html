@@ -1,182 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnogar – Tu Hogar Inteligente</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero-bg { background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%); }
-        .service-card { transition: all 0.3s ease; }
-        .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-        .floating-icon { animation: float 3s ease-in-out infinite; }
-        @keyframes float { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
-        .gradient-text { background: linear-gradient(135deg, #2563EB, #3B82F6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnogar BA | WiFi, cámaras, alarmas – Llegamos en 2 h a CABA</title>
+  <meta name="description" content="Instalación de WiFi, cámaras, alarmas, cerraduras y electricidad en CABA. Técnicos en 2 horas.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔧</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--amarillo:#ffcc00;--negro:#111;--blanco:#fff;--gris:#222}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{background:var(--negro);color:var(--blanco);line-height:1.6}
+    a{color:var(--amarillo);text-decoration:none}
+    .btn{background:var(--amarillo);color:var(--negro);padding:10px 20px;border-radius:4px;font-weight:bold;display:inline-block}
+    header{background:var(--negro);border-bottom:1px solid var(--gris);position:sticky;top:0;z-index:10}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;max-width:900px;margin:auto}
+    .hero{text-align:center;padding:4rem 1rem;background:var(--negro)}
+    .hero h1{font-size:2.2rem;margin-bottom:.5rem}
+    .hero p{margin-bottom:1.5rem;color:#ccc}
+    .cards{display:grid;gap:1.5rem;padding:2rem 1rem;max-width:900px;margin:auto;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .card{background:var(--gris);border:1px solid #333;border-radius:8px;padding:1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center}
+    .card h3{margin:.5rem 0;font-size:1.3rem}
+    .card .price{font-size:1.8rem;color:var(--amarillo);margin:.8rem 0}
+    .footer{background:#000;text-align:center;padding:1.5rem;font-size:.8rem;color:#aaa}
+    .float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px;border-radius:50%;font-size:1.4rem;z-index:20}
+    @media(min-width:600px){.hero h1{font-size:2.8rem}}
+  </style>
 </head>
-<body class="font-sans">
+<body>
 
-<!-- NAV -->
-<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between h-16 items-center">
-        <h1 class="text-2xl font-bold gradient-text">Tecnogar BA</h1>
-        <div class="hidden md:flex space-x-6">
-            <a href="#home" class="text-gray-900 hover:text-blue-600">Inicio</a>
-            <a href="#services" class="text-gray-900 hover:text-blue-600">Servicios</a>
-            <a href="#about" class="text-gray-900 hover:text-blue-600">Nosotros</a>
-            <a href="#contact" class="text-gray-900 hover:text-blue-600">Contacto</a>
-            <a href="mailto:tecnogar948@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Cotizar</a>
-        </div>
-    </div>
-</nav>
+<header>
+  <nav>
+    <span style="font-weight:bold;color:var(--amarillo)">Tecnogar BA</span>
+    <a href="https://wa.me/541158279207?text=Hola,%20necesito%20un%20técnico%20ya" class="btn">Solicitar Ahora</a>
+  </nav>
+</header>
 
-<!-- HERO -->
-<section id="home" class="hero-bg pt-16 min-h-screen flex items-center">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="text-white">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">
-                Tu Hogar
-                <span class="block text-yellow-300">Inteligente</span>
-            </h1>
-            <p class="text-xl mb-8 text-blue-100 leading-relaxed">
-                Transformamos tu hogar con las últimas tecnologías en conectividad, seguridad y automatización.
-                Servicios con garantía y soporte técnico especializado.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#contact" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 text-center">Solicitar Evaluación Gratuita</a>
-                <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 text-center">Ver Servicios</a>
-            </div>
-        </div>
-        <div class="relative">
-            <img src="hero-internet.jpg" alt="Instalación de Internet" class="rounded-lg shadow-2xl w-full">
-            <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 p-3 rounded-full floating-icon"><i class="fas fa-wifi text-2xl"></i></div>
-            <div class="absolute -bottom-4 -left-4 bg-white text-blue-600 p-3 rounded-full floating-icon" style="animation-delay: 1s;"><i class="fas fa-shield-alt text-2xl"></i></div>
-        </div>
-    </div>
+<section class="hero">
+  <h1>WiFi lento, cámara que no graba, cerradura sin batería…</h1>
+  <p>Llegamos a CABA en 2 horas y lo dejamos andando. Garantía 6 meses.</p>
+  <a href="https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" class="btn">Quiero mi servicio YA</a>
 </section>
 
-<!-- SERVICIOS (sin precios) -->
-<section id="services" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">Servicios Especializados</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ofrecemos soluciones integrales en tecnología domiciliaria con la más alta calidad y profesionalismo</p>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="service-card bg-white rounded-lg shadow-lg p-8">
-            <div class="text-blue-600 mb-6"><i class="fas fa-wifi text-4xl"></i></div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Conectividad y Redes</h3>
-            <p class="text-gray-600 mb-6">Instalación profesional de internet, configuración de redes domésticas, optimización de señal WiFi y soluciones de conectividad integral.</p>
-            <img src="hero-internet.jpg" alt="Conectividad" class="rounded-lg mt-4 w-full">
-            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
-        </div>
-
-        <div class="service-card bg-white rounded-lg shadow-lg p-8">
-            <div class="text-blue-600 mb-6"><i class="fas fa-shield-alt text-4xl"></i></div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Seguridad Electrónica</h3>
-            <p class="text-gray-600 mb-6">Cámaras HD/4K, alarmas con monitoreo remoto, sensores de movimiento y grabación en nube 24/7.</p>
-            <img src="security-camera.jpg" alt="Cámaras de seguridad" class="rounded-lg mt-4 w-full">
-            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
-        </div>
-
-        <div class="service-card bg-white rounded-lg shadow-lg p-8">
-            <div class="text-blue-600 mb-6"><i class="fas fa-key text-4xl"></i></div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Control de Acceso</h3>
-            <p class="text-gray-600 mb-6">Porteros inalámbricos con video, cerraduras electrónicas con código y biométricas, sistemas de intercomunicación avanzados.</p>
-            <img src="smart-lock.jpg" alt="Cerradura inteligente" class="rounded-lg mt-4 w-full">
-            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
-        </div>
-
-        <div class="service-card bg-white rounded-lg shadow-lg p-8">
-            <div class="text-blue-600 mb-6"><i class="fas fa-bolt text-4xl"></i></div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Electricidad Domiciliaria</h3>
-            <p class="text-gray-600 mb-6">Instalaciones eléctricas domiciliarias, automatización de iluminación, sistemas de domótica y soluciones inteligentes.</p>
-            <img src="electrical-panel.jpg" alt="Panel eléctrico" class="rounded-lg mt-4 w-full">
-            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
-        </div>
-
-        <div class="service-card bg-white rounded-lg shadow-lg p-8">
-            <div class="text-blue-600 mb-6"><i class="fas fa-home text-4xl"></i></div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Domótica Integral</h3>
-            <p class="text-gray-600 mb-6">Control centralizado de iluminación, climatización, seguridad y entretenimiento desde un solo dispositivo o app móvil.</p>
-            <img src="smart-home.jpg" alt="Hogar inteligente" class="rounded-lg mt-4 w-full">
-            <a href="#contact" class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 mt-4">Solicitar Servicio</a>
-        </div>
-
-        <!-- Llamado a la acción -->
-        <div class="service-card bg-blue-600 text-white rounded-lg shadow-lg p-8 flex flex-col justify-center items-center text-center">
-            <i class="fas fa-tools text-5xl mb-4"></i>
-            <h3 class="text-2xl font-bold mb-4">¿Necesitás otro servicio?</h3>
-            <p class="mb-6">Contactanos y lo resolvemos. Hacemos instalaciones a medida.</p>
-            <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100">Consultar Ahora</a>
-        </div>
-    </div>
+<section class="cards">
+  <div class="card">
+    <i class="fa-solid fa-wifi" style="font-size:2rem;color:var(--amarillo)"></i>
+    <h3>WiFi sin muertos</h3>
+    <p>Análisis + repetidor mesh + configuración</p>
+    <div class="price">$19.990</div>
+    <a href="https://wa.me/541158279207?text=Quiero%20WiFi%20sin%20muertos" class="btn">Reservar</a>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-camera" style="font-size:2rem;color:var(--amarillo)"></i>
+    <h3>Cámara IP lista</h3>
+    <p>Montaje, configuración y app móvil</p>
+    <div class="price">$24.990</div>
+    <a href="https://wa.me/541158279207?text=Quiero%20una%20cámara%20IP" class="btn">Reservar</a>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-bell" style="font-size:2rem;color:var(--amarillo)"></i>
+    <h3>Ring / Portero</h3>
+    <p>Instalación sin cables + app + batería</p>
+    <div class="price">$24.990</div>
+    <a href="https://wa.me/541158279207?text=Quiero%20Ring%20o%20portero" class="btn">Reservar</a>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-lock" style="font-size:2rem;color:var(--amarillo)"></i>
+    <h3>Cerradura inteligente</h3>
+    <p>Huella, código, app. No hace falta llave</p>
+    <div class="price">$34.990</div>
+    <a href="https://wa.me/541158279207?text=Quiero%20cerradura%20inteligente" class="btn">Reservar</a>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-bolt" style="font-size:2rem;color:var(--amarillo)"></i>
+    <h3>Electricidad exprés</h3>
+    <p>Térmicas, enchufes, lámparas, cortocircuitos</p>
+    <div class="price">$14.990</div>
+    <a href="https://wa.me/541158279207?text=Quiero%20electricidad" class="btn">Reservar</a>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-shield-halved" style="font-size:2rem;color:var(--amarillo)"></i>
+    <h3>Kit 4 cámaras HD</h3>
+    <p>DVR, disco, vista remota, instalación full</p>
+    <div class="price">$89.990</div>
+    <a href="https://wa.me/541158279207?text=Quiero%20kit%20de%204%20cámaras" class="btn">Reservar</a>
+  </div>
 </section>
 
-<!-- NOSOTROS -->
-<section id="about" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-            <img src="team.jpg" alt="Nuestro Equipo" class="rounded-lg shadow-xl w-full">
-        </div>
-        <div>
-            <h2 class="text-4xl font-bold text-gray-900 mb-6">¿Por qué elegirnos?</h2>
-            <p class="text-lg text-gray-600 mb-6">
-                Somos un equipo de profesionales certificados con más de 10 años de experiencia en soluciones tecnológicas domiciliarias.
-                Nos especializamos en transformar hogares en espacios inteligentes, seguros y eficientes.
-            </p>
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">Más de 500 hogares transformados</h3>
-                <p class="text-gray-600">Nuestros clientes confían en nosotros para hacer de sus hogares espacios más seguros, eficientes y tecnológicamente avanzados.</p>
-            </div>
-        </div>
-    </div>
+<section style="text-align:center;padding:2rem 1rem">
+  <h2 style="color:var(--amarillo);margin-bottom:.5rem">Pack completo</h2>
+  <p>WiFi + 4 cámaras + cerradura + electricidad básica</p>
+  <div style="background:var(--gris);display:inline-block;padding:1.5rem 2rem;border-radius:8px">
+    <div style="font-size:2.2rem;font-weight:bold;color:var(--amarillo)">$149.990</div>
+    <div style="font-size:.9rem;color:#ccc">Ahorrá $30.000 – mismo día</div>
+  </div><br>
+  <a href="https://wa.me/541158279207?text=Quiero%20el%20pack%20completo" class="btn" style="margin-top:1rem">Lo quiero</a>
 </section>
 
-<!-- CONTACTO -->
-<section id="contact" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Listo para transformar tu hogar?</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Contáctanos hoy mismo para una evaluación gratuita y descubre cómo podemos hacer de tu hogar un espacio más inteligente y seguro.</p>
-    </div>
-    <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Formulario -->
-        <div class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Solicita tu Evaluación Gratuita</h3>
-            <form>
-                <input type="text" placeholder="Nombre" required class="w-full mb-4 px-4 py-3 border rounded-lg">
-                <input type="email" placeholder="Email" required class="w-full mb-4 px-4 py-3 border rounded-lg">
-                <input type="tel" placeholder="Teléfono" required class="w-full mb-4 px-4 py-3 border rounded-lg">
-                <textarea placeholder="Mensaje" rows="4" class="w-full mb-4 px-4 py-3 border rounded-lg"></textarea>
-                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Enviar Solicitud</button>
-            </form>
-        </div>
-        <!-- Datos de contacto -->
-        <div class="space-y-6">
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <h4 class="font-semibold text-gray-900 mb-2">Teléfono</h4>
-                <p class="text-gray-600">1123456789</p>
-                <h4 class="font-semibold text-gray-900 mb-2 mt-4">WhatsApp</h4>
-                <p class="text-gray-600">1123456789</p>
-                <h4 class="font-semibold text-gray-900 mb-2 mt-4">Email</h4>
-                <p class="text-gray-600">tecnogar948@gmail.com</p>
-            </div>
-            <div class="bg-blue-600 text-white rounded-lg p-6 text-center">
-                <h3 class="text-xl font-bold mb-2">¿Tenés dudas?</h3>
-                <p class="mb-4">Escribinos y respondemos en menos de 24 h.</p>
-                <a href="mailto:tecnogar948@gmail.com" class="inline-block bg-white text-blue-600 px-6 py-2 rounded-lg font-bold hover:bg-gray-100">Enviar Mail</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-white py-8">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-        <p>&copy; 2024 Tecnogar. Todos los derechos reservados.</p>
-    </div>
+<footer class="footer">
+  <div><strong>Tecnogar BA</strong></div>
+  <div>CABA – Zona Norte | L a V 8-19 | Sáb 9-14 | Emergencias 24 h</div>
+  <div>WhatsApp <a href="https://wa.me/541158279207">11 5827 9207</a></div>
+  <div style="margin-top:.5rem">© 2025 – RESPONSABLE INSCRIPTO AFIP | Garantía 6 meses</div>
 </footer>
+
+<a href="https://wa.me/541158279207?text=Hola,%20necesito%20un%20técnico%20ya" class="float">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
