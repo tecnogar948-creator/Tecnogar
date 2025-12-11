@@ -20,6 +20,7 @@
         .gradient-text{background:linear-gradient(90deg,var(--oro),#f1d592);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
         nav{background:#0a0a0a;border-bottom:1px solid #444}
         footer{background:#0a0a0a}
+        .qr-code{width:120px;height:120px;margin:auto}
     </style>
 </head>
 <body>
@@ -29,10 +30,10 @@
     <div class="max-w-7xl mx-auto px-4 flex justify-between h-16 items-center">
         <h1 class="text-2xl font-bold gradient-text">TecnogarBA</h1>
         <div class="hidden md:flex space-x-6">
-            <a href="#home" class="text-gray-300 hover:text-negro">Inicio</a>
-            <a href="#services" class="text-gray-300 hover:text-negro">Servicios</a>
-            <a href="#about" class="text-gray-300 hover:text-negro">Nosotros</a>
-            <a href="#contact" class="text-gray-300 hover:text-negro">Contacto</a>
+            <a href="#home" class="text-gray-300 hover:text-white">Inicio</a>
+            <a href="#services" class="text-gray-300 hover:text-white">Servicios</a>
+            <a href="#about" class="text-gray-300 hover:text-white">Nosotros</a>
+            <a href="#contact" class="text-gray-300 hover:text-white">Contacto</a>
         </div>
     </div>
 </nav>
@@ -44,7 +45,6 @@
             <h1 class="text-5xl md:text-6xl font-bold mb-6">
                 Tu Hogar
                 <span class="block gradient-text">Inteligente</span>
-                
             </h1>
             <p class="text-xl mb-8 text-gray-300 leading-relaxed">
                 Transformamos tu hogar con las últimas tecnologías en conectividad, seguridad y automatización.
@@ -75,7 +75,8 @@
             <div class="text-oro mb-6"><i class="fas fa-wifi text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-white mb-4">Conectividad y Redes</h3>
             <p class="text-gray-400 mb-6">Instalación profesional de internet, configuración de redes domésticas, optimización de señal WiFi y soluciones de conectividad integral.</p>
-            <img src="casainteligente.jpg" alt="Casa Inteligente" class="rounded-lg mt-4 w-full">
+            <!-- IMAGEN NUEVA: conectividad-libre.jpg -->
+            <img src="resources/conectividad-libre.jpg" alt="Conectividad y Redes" class="rounded-lg mt-4 w-full">
             <a href="https://wa.me/541158279207?text=Quiero%20Conectividad%20y%20Redes" class="btn-oro mt-4">Solicitar Servicio</a>
         </div>
 
@@ -133,7 +134,6 @@
                 Somos un equipo de profesionales con experiencia en soluciones tecnológicas domiciliarias.
                 Nos especializamos en transformar hogares en espacios inteligentes, seguros y eficientes.
             </p>
-            </div>
         </div>
     </div>
 </section>
@@ -144,6 +144,16 @@
         <h2 class="text-4xl font-bold gradient-text mb-4">¿Listo para transformar tu hogar?</h2>
         <p class="text-xl text-gray-400 max-w-3xl mx-auto">Contactanos y coordinamos tu instalación en el día.</p>
     </div>
+    <div class="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="bg-gray-900 border border-oro rounded-lg p-8">
+            <h3 class="text-2xl font-bold text-oro mb-6">Dejanos tus datos</h3>
+            <form>
+                <input type="text" placeholder="Nombre" required class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white">
+                <input type="email" placeholder="Email" required class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white">
+                <input type="tel" placeholder="Teléfono" required class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white">
+                <textarea placeholder="Mensaje" rows="4" class="w-full mb-4 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white"></textarea>
+                <button type="submit" formaction="https://wa.me/541158279207" formtarget="_blank" class="btn-oro">Enviar por WhatsApp</button>
+            </form>
         </div>
         <div class="space-y-6">
             <div class="bg-gray-900 border border-oro rounded-lg p-6">
@@ -152,15 +162,25 @@
                 <h4 class="font-semibold text-oro mb-2 mt-4">Email</h4>
                 <p class="text-gray-300">tecnogar948@gmail.com</p>
             </div>
+            <div class="bg-oro text-black rounded-lg p-6 text-center">
+                <h3 class="text-xl font-bold mb-2">¿Tenés dudas?</h3>
+                <p class="mb-4">Escribinos y respondemos en menos de 24 h.</p>
+                <a href="https://wa.me/541158279207?text=Hola,%20tengo%20una%20consulta" class="inline-block bg-black text-oro px-6 py-2 rounded-lg font-bold hover:bg-white hover:text-black transition">Consultar por WhatsApp</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="py-8">
-    <div class="max-w-7xl mx-auto px-4 text-center text-gray-500">
-        <p>&copy; 2024 TecnogarBA. Todos los derechos reservados.</p>
+<!-- QR + FOOTER -->
+<footer class="py-12 bg-black">
+    <div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
+        <h3 class="text-2xl font-bold gradient-text mb-4">¿Querés hablar con nosotros?</h3>
+        <p class="mb-4">Escanneá el código QR o hacé clic en el número de abajo</p>
+        <a href="https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" class="text-2xl font-bold text-oro hover:underline">+54 11 5827 9207</a>
+        <div class="mt-6">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" alt="QR WhatsApp" class="mx-auto">
+        </div>
+        <p class="mt-6">&copy; 2024 TecnogarBA. Todos los derechos reservados.</p>
     </div>
 </footer>
 
