@@ -20,7 +20,6 @@
         .gradient-text{background:linear-gradient(90deg,var(--oro),#f1d592);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
         nav{background:#0a0a0a;border-bottom:1px solid #444}
         footer{background:#0a0a0a}
-        .qr-code{width:120px;height:120px;margin:auto}
     </style>
 </head>
 <body>
@@ -47,7 +46,6 @@
                 <span class="block gradient-text">Inteligente</span>
             </h1>
             <p class="text-xl mb-8 text-gray-300 leading-relaxed">
-                     <div>
                 Transformamos tu hogar con las últimas tecnologías en conectividad, seguridad y automatización.
                 Servicios con garantía y soporte técnico especializado.
             </p>
@@ -76,8 +74,8 @@
             <div class="text-oro mb-6"><i class="fas fa-wifi text-4xl"></i></div>
             <h3 class="text-2xl font-bold text-white mb-4">Conectividad y Redes</h3>
             <p class="text-gray-400 mb-6">Instalación profesional de internet, configuración de redes domésticas, optimización de señal WiFi y soluciones de conectividad integral.</p>
-            <!-- IMAGEN NUEVA: imagenredes.jpg -->
-            <img src="resources/imagenredes.jpg" alt="Conectividad y Redes" class="rounded-lg mt-4 w-full">
+            <!-- IMAGEN NUEVA: imagen redes.jpeg -->
+            <img src="resources/imagen redes.jpeg" alt="Conectividad y Redes" class="rounded-lg mt-4 w-full">
             <a href="https://wa.me/541158279207?text=Quiero%20Conectividad%20y%20Redes" class="btn-oro mt-4">Solicitar Servicio</a>
         </div>
 
@@ -148,32 +146,28 @@
 
     <!-- Datos de contacto con acceso directo -->
     <div class="max-w-3xl mx-auto px-4 text-center">
-        <div class="space-y-6">
-            <div class="bg-gray-900 border border-oro rounded-lg p-6">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
                 <h4 class="font-semibold text-oro mb-2">WhatsApp</h4>
                 <a href="https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" class="text-xl font-bold text-oro hover:underline">+54 11 5827 9207</a>
-                <h4 class="font-semibold text-oro mb-2 mt-4">Email</h4>
-                <a href="mailto:tecnogar948@gmail.com" class="text-gray-300 hover:text-white">tecnogar948@gmail.com</a>
             </div>
             <div class="bg-oro text-black rounded-lg p-6 text-center">
                 <h3 class="text-xl font-bold mb-2">¿Tenés dudas?</h3>
-                <p class="mb-4">Escribinos y respondemos en menos de 24 h.</p>
-                <a href="https://wa.me/541158279207?text=Hola,%20tengo%20una%20consulta" class="inline-block bg-black text-oro px-6 py-2 rounded-lg font-bold hover:bg-white hover:text-black transition">Consultar por WhatsApp</a>
+                <p class="mb-4">Escanneá el código QR</p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" alt="QR WhatsApp" class="mx-auto">
+            </div>
+            <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
+                <h4 class="font-semibold text-oro mb-2">Email</h4>
+                <a href="mailto:tecnogar948@gmail.com" class="text-gray-300 hover:text-white">tecnogar948@gmail.com</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- QR + FOOTER -->
+<!-- FOOTER -->
 <footer class="py-12 bg-black">
     <div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
-        <h3 class="text-2xl font-bold gradient-text mb-4">¿Querés hablar con nosotros?</h3>
-        <p class="mb-4">Escanneá el código QR o hacé clic en el número de abajo</p>
-        <a href="https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" class="text-2xl font-bold text-oro hover:underline">+54 11 5827 9207</a>
-        <div class="mt-6">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/541158279207?text=Hola,%20quiero%20mi%20servicio%20ya" alt="QR WhatsApp" class="mx-auto">
-        </div>
-        <p class="mt-6">&copy; 2024 TecnogarBA. Todos los derechos reservados.</p>
+        <p>&copy; 2024 TecnogarBA. Todos los derechos reservados.</p>
     </div>
 </footer>
 
