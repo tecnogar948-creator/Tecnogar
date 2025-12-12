@@ -1,11 +1,192 @@
-<!-- ¿POR QUÉ ELEGIRNOS? -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnogarBA | WiFi, cámaras, alarmas – Llegamos en 2 h a CABA</title>
+    <meta name="description" content="Instalación profesional de WiFi, cámaras, alarmas, cerraduras electrónicas y soluciones tecnológicas domiciliarias en CABA. Técnicos en 2 horas con garantía.">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos -->
+    <style>
+        :root {
+            --aguamarina: #006b6b;
+            --oro: #d4af37;
+            --negro: #111;
+            --gris-oscuro: #1f1f1f;
+        }
+
+        body {
+            background: var(--negro);
+            color: #e0e0e0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, var(--negro) 0%, var(--gris-oscuro) 100%);
+        }
+
+        .service-card {
+            background: var(--gris-oscuro);
+            border: 1px solid #333;
+            transition: .3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px var(--oro);
+        }
+
+        .floating-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .btn-oro {
+            background: var(--oro);
+            color: var(--negro);
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 6px;
+            display: inline-block;
+            transition: .3s;
+        }
+
+        .btn-oro:hover {
+            box-shadow: 0 0 15px var(--oro);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--oro), #f1d592);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav {
+            background: #0a0a0a;
+            border-bottom: 1px solid #444;
+        }
+
+        footer {
+            background: #0a0a0a;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="bg-black shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between h-16 items-center">
+        <h1 class="text-2xl font-bold gradient-text">TecnogarBA</h1>
+        <div class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-300 hover:text-white">Inicio</a>
+            <a href="#services" class="text-gray-300 hover:text-white">Servicios</a>
+            <a href="#why-choose-us" class="text-gray-300 hover:text-white">Nosotros</a>
+            <a href="#contact" class="text-gray-300 hover:text-white">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-bg min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Tu Hogar <span class="block gradient-text">Inteligente</span>
+            </h1>
+
+            <p class="text-xl mb-8 text-gray-300 leading-relaxed">
+                Transformamos tu hogar con las tecnologías más avanzadas en conectividad, seguridad y automatización.
+                Servicio profesional con garantía y soporte real.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="https://wa.me/541158279207?text=Hola ,%20quiero%20mi%20servicio%20ya" class="btn-oro">Solicitar Servicio</a>
+                <a href="#services" class="border border-oro text-oro px-6 py-3 rounded-lg font-semibold hover:bg-oro hover:text-black transition">
+                    Ver Servicios
+                </a>
+            </div>
+        </div>
+
+        <div class="relative">
+            <img src="casainteligente.jpg" alt="Casa Inteligente" class="rounded-lg shadow-2xl w-full">
+            <div class="absolute -top-4 -right-4 bg-oro text-black p-3 rounded-full floating-icon">
+                <i class="fas fa-wifi text-xl"></i>
+            </div>
+            <div class="absolute -bottom-4 -left-4 bg-white text-black p-3 rounded-full floating-icon" style="animation-delay: 1s;">
+                <i class="fas fa-shield-alt text-xl"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+        <h2 class="text-4xl font-bold gradient-text mb-4">Servicios Especializados</h2>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+            Soluciones integrales en tecnología domiciliaria con la máxima calidad y profesionalismo.
+        </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Redes -->
+        <div class="service-card rounded-lg p-8">
+            <div class="text-oro mb-6"><i class="fas fa-wifi text-4xl"></i></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Conectividad y Redes</h3>
+            <p class="text-gray-400 mb-6">
+                Instalación profesional de internet, redes domésticas, routers, repetidores y optimización de señal WiFi.
+            </p>
+            <img src="imagesredes.jpg" class="rounded-lg w-full">
+            <a href="#" class="btn-oro mt-4 block text-center">Solicitar Servicio</a>
+        </div>
+
+        <!-- Seguridad -->
+        <div class="service-card rounded-lg p-8">
+            <div class="text-oro mb-6"><i class="fas fa-shield-alt text-4xl"></i></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Seguridad Electrónica</h3>
+            <p class="text-gray-400 mb-6">
+                Cámaras HD/4K, alarmas, sensores inteligentes y monitoreo remoto desde el celular.
+            </p>
+            <img src="security-camera.jpg" class="rounded-lg w-full">
+            <a href="#" class="btn-oro mt-4 block text-center">Solicitar Servicio</a>
+        </div>
+
+        <!-- Acceso -->
+        <div class="service-card rounded-lg p-8">
+            <div class="text-oro mb-6"><i class="fas fa-key text-4xl"></i></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Control de Acceso</h3>
+            <p class="text-gray-400 mb-6">
+                Cerraduras electrónicas, porteros inalámbricos con video y sistemas de ingreso inteligente.
+            </p>
+            <img src="smart-lock.jpg" class="rounded-lg w-full">
+            <a href="#" class="btn-oro mt-4 block text-center">Solicitar Servicio</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- NOSOTROS -->
 <section id="why-choose-us" class="py-20 px-6 bg-black text-gray-200">
     <div class="max-w-5xl mx-auto text-center">
+
         <h2 class="text-4xl font-bold gradient-text mb-8">⭐ ¿Por qué elegirnos?</h2>
+        
         <p class="text-xl mb-12 text-gray-300">
-            Aunque somos una empresa joven, trabajamos con estándares profesionales altos: puntualidad, prolijidad,
-            atención humana y soluciones reales que funcionan. Cada hogar es único, y cada instalación la realizamos con
-            dedicación, como si fuera la nuestra.
+            Somos una empresa joven con estándares profesionales altos: puntualidad, prolijidad, atención personalizada y soluciones que funcionan desde el primer día.
         </p>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -13,89 +194,117 @@
             <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
                 <img src="https://img.icons8.com/ios-filled/100/00cccc/services.png" class="mx-auto mb-4">
                 <h3 class="text-2xl font-bold text-oro mb-2">Atención personalizada</h3>
-                <p class="text-gray-300">
-                    Te asesoramos sin compromiso, detectamos la causa real del problema y te damos la solución más conveniente.
-                </p>
+                <p class="text-gray-300">Asesoramiento real, diagnóstico preciso y presupuesto honesto.</p>
             </div>
 
             <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
                 <img src="https://img.icons8.com/ios-filled/100/00cccc/connected-world.png" class="mx-auto mb-4">
-                <h3 class="text-2xl font-bold text-oro mb-2">Soluciones integrales</h3>
-                <p class="text-gray-300">
-                    WiFi, cámaras, alarmas, cerraduras electrónicas, redes y automatización. Todo en un solo lugar.
-                </p>
+                <h3 class="text-2xl font-bold text-oro mb-2">Soluciones completas</h3>
+                <p class="text-gray-300">Redes, cámaras, alarmas, cerraduras, domótica y más.</p>
             </div>
 
             <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
                 <img src="https://img.icons8.com/ios-filled/100/00cccc/like.png" class="mx-auto mb-4">
-                <h3 class="text-2xl font-bold text-oro mb-2">Garantía y respaldo</h3>
-                <p class="text-gray-300">
-                    Equipos confiables y una instalación correcta desde el primer día, con garantía real.
-                </p>
+                <h3 class="text-2xl font-bold text-oro mb-2">Garantía real</h3>
+                <p class="text-gray-300">Equipos confiables y servicio responsable.</p>
             </div>
 
             <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
                 <img src="https://img.icons8.com/ios-filled/100/00cccc/energy-saving-bulb.png" class="mx-auto mb-4">
-                <h3 class="text-2xl font-bold text-oro mb-2">Optimización energética</h3>
-                <p class="text-gray-300">
-                    Configuramos dispositivos para reducir consumos y mejorar la eficiencia en tu hogar.
-                </p>
+                <h3 class="text-2xl font-bold text-oro mb-2">Ahorro energético</h3>
+                <p class="text-gray-300">Automatización que reduce consumos.</p>
             </div>
 
             <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
                 <img src="https://img.icons8.com/ios-filled/100/00cccc/customer-support.png" class="mx-auto mb-4">
-                <h3 class="text-2xl font-bold text-oro mb-2">Soporte inmediato</h3>
-                <p class="text-gray-300">
-                    Asistencia por WhatsApp al instante. Estamos cuando nos necesitás.
-                </p>
+                <h3 class="text-2xl font-bold text-oro mb-2">Soporte rápido</h3>
+                <p class="text-gray-300">Atención inmediata por WhatsApp.</p>
             </div>
 
             <div class="bg-gray-900 border border-oro rounded-lg p-6 text-center">
                 <img src="https://img.icons8.com/ios-filled/100/00cccc/bullseye.png" class="mx-auto mb-4">
                 <h3 class="text-2xl font-bold text-oro mb-2">Compromiso total</h3>
-                <p class="text-gray-300">
-                    Nuestro objetivo es simple: que todo quede funcionando perfecto y que tu experiencia sea excelente.
-                </p>
+                <p class="text-gray-300">Cada instalación es importante para nosotros.</p>
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- MISIÓN - VISIÓN - VALORES -->
+<!-- MISIÓN / VISIÓN / VALORES -->
 <section class="py-20 px-6 bg-gray-900 text-gray-200">
     <div class="max-w-5xl mx-auto text-center">
+
         <h2 class="text-4xl font-bold gradient-text mb-12">Nuestra Identidad</h2>
 
         <div class="grid md:grid-cols-3 gap-10">
 
-            <!-- MISIÓN -->
             <div class="p-8 bg-black border border-oro rounded-xl shadow-lg">
                 <h3 class="text-3xl font-bold text-oro mb-4">Misión</h3>
                 <p class="text-gray-300">
-                    Proveer soluciones tecnológicas domiciliarias confiables, rápidas y accesibles, mejorando la seguridad,
-                    conectividad y comodidad de cada hogar con un servicio profesional y humano.
+                    Ofrecer soluciones tecnológicas confiables, accesibles y de calidad que mejoren la seguridad,
+                    conectividad y confort de cada hogar.
                 </p>
             </div>
 
-            <!-- VISIÓN -->
             <div class="p-8 bg-black border border-oro rounded-xl shadow-lg">
                 <h3 class="text-3xl font-bold text-oro mb-4">Visión</h3>
                 <p class="text-gray-300">
-                    Ser una empresa líder en tecnología y seguridad domiciliaria en CABA, destacándonos por la calidad de
-                    nuestro trabajo, la innovación y la cercanía con cada cliente.
+                    Convertirnos en la empresa líder en hogares inteligentes y seguridad domiciliaria en CABA,
+                    destacándonos por la innovación y la calidad del servicio.
                 </p>
             </div>
 
-            <!-- VALORES -->
             <div class="p-8 bg-black border border-oro rounded-xl shadow-lg">
                 <h3 class="text-3xl font-bold text-oro mb-4">Valores</h3>
                 <p class="text-gray-300">
-                    Compromiso, honestidad, responsabilidad, excelencia técnica, puntualidad y respeto por cada hogar que
-                    intervenimos.
+                    Compromiso, responsabilidad, transparencia, excelencia técnica y una atención verdaderamente humana.
                 </p>
             </div>
 
         </div>
     </div>
 </section>
+
+<!-- CONTACTO -->
+<section id="contact" class="py-24 bg-black">
+    <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+        <h2 class="text-4xl font-bold gradient-text mb-4">Contacto</h2>
+        <p class="text-xl text-gray-400">Coordiná tu instalación hoy. Respondemos en minutos.</p>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- WhatsApp -->
+        <div class="bg-gray-900 border border-oro p-8 text-center rounded-xl shadow-lg">
+            <i class="fab fa-whatsapp text-4xl text-oro mb-4"></i>
+            <h3 class="text-xl font-bold text-oro mb-2">WhatsApp</h3>
+            <a href="https://wa.me/541158279207" class="text-xl font-semibold text-gray-300 hover:text-white block">+54 11 5827 9207</a>
+        </div>
+
+        <!-- QR -->
+        <div class="bg-oro text-black p-8 text-center rounded-xl shadow-lg flex flex-col items-center">
+            <i class="fas fa-qrcode text-4xl mb-3"></i>
+            <h3 class="text-2xl font-bold mb-2">Escaneá y escribinos</h3>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://wa.me/541158279207" class="rounded-lg shadow-lg mt-3">
+        </div>
+
+        <!-- Email -->
+        <div class="bg-gray-900 border border-oro p-8 text-center rounded-xl shadow-lg">
+            <i class="fas fa-envelope text-4xl text-oro mb-4"></i>
+            <h3 class="text-xl font-bold text-oro mb-2">Email</h3>
+            <a href="mailto:tecnogar948@gmail.com" class="text-xl text-gray-300 hover:text-white">tecnogar948@gmail.com</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 bg-black">
+    <div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
+        <p>&copy; 2024 TecnogarBA. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
